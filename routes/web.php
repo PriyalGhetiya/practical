@@ -23,7 +23,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/user', 'UserController@index')->name('user');
 
-Route::get('/admin', 'AdminController@index')->name('admin')->middleware('admin');
+Route::get('/admin', 'AdminController@index')->name('admin');
 
 Route::resource('product','ProductController');
 Route::resource('categories','CategoryController');
